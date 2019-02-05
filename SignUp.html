@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="signUp.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+
+    <!-- ****** faviconit.com favicons ****** -->
+    <link rel="shortcut icon" href="faviconit/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="faviconit/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="faviconit/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="faviconit/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="faviconit/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="faviconit/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconit/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconit/favicon-16.png">
+    <link rel="apple-touch-icon" href="faviconit/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="faviconit/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="faviconit/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="faviconit/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="faviconit/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="faviconit/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="faviconit/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="faviconit/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="faviconit/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <!-- ****** faviconit.com favicons ****** -->
+</head>
+<body>
+
+<form action="index.html" method="post">
+
+    <h1>Sign Up</h1>
+
+    <fieldset>
+        <legend><span class="number">1</span>Your basic info</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email"  id="mail" name="user_email">
+
+        <label for="password">Password:</label>
+        <input type="password"  id="password" name="user_password">
+
+        <label>Age:</label>
+        <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 18</label><br>
+        <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">18 or older</label>
+    </fieldset>
+
+    <fieldset>
+        <legend><span class="number">2</span>Your profile</legend>
+        <label for="bio">Biography:</label>
+        <textarea class="textarea" id="bio" name="user_bio"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <label for="job">Main Device:</label>
+        <select id="job" name="user_job">
+            <optgroup label="Devices">
+                <option value="frontend_developer">Pc</option>
+                <option value="php_developor">Xbox</option>
+                <option value="python_developer">Playstation</option>
+                <option value="rails_developer">Nintendo</option>
+                <option value="web_designer">Mobile</option>
+        </select>
+
+
+        <label> Game Type Interests:</label>
+        <input type="checkbox" id="Stealth Shooter" value="interest_Stealth Shooter" name="user_interest"><label class="light" for="Stealth Shooter">Stealth Shooter</label><br>
+        <input type="checkbox" id="Shooter" value="interest_Shooter" name="user_interest"><label class="light" for="Shooter">Shooter</label>
+<br>
+        <input type="checkbox" id="MMO" value="interest_MMO" name="user_interest"><label class="light" for="MMO">MMO</label><br>
+        <input type="checkbox" id="FPS" value="interest_FPS" name="user_interest"><label class="light" for="FPS">FPS</label><br>
+        <input type="checkbox" id="RPG" value="interest_RPG" name="user_interest"><label class="light" for="RPG">RPG</label><br>
+        <input type="checkbox" id="Combat" value="interest_Combat" name="user_interest"><label class="light" for="Combat">Combat</label><br>
+        <input type="checkbox" id="RTS" value="interest_RTS" name="user_interest"><label class="light" for="RTS">RTS</label><br>
+        <input type="checkbox" id="Adventure" value="interest_Adventure" name="user_interest"><label class="light" for="Adventure">Adventure</label><br>
+        <input type="checkbox" id="Simulation" value="interest_Simulation" name="user_interest"><label class="light" for="Simulation">Simulation</label><br>
+        <input type="checkbox" id="Puzzle" value="interest_Puzzle" name="user_interest"><label class="light" for="Puzzle">Puzzle</label><br>
+        <input type="checkbox" id="Action" value="interest_Action" name="user_interest"><label class="light" for="Action">Action</label>
+        <br>
+        <input type="checkbox" id="Sports" value="interest_Sports" name="user_interest"><label class="light" for="Sports">Sports</label>
+
+    </fieldset>
+    <button type="submit">Sign Up</button>
+</form>
+</body>
+</html>
